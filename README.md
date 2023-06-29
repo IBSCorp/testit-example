@@ -27,7 +27,7 @@
 1. Конфигурационный файл
 2. env (переменные окружения)
 3. CLI (command line interface = system properties)
-4. QualIT Plugin (если работаете локально в IntelliJ Idea)
+4. Chameleon Plugin (если работаете локально в IntelliJ Idea)
 
 ### Конфигурационный файл
 
@@ -89,7 +89,7 @@ testit.configFile=config/dev_config.json
 
 ### QualIT Plugin
 
-Параметры, заданные в QualIT Plugin, будут переданы как system properties и иметь наивысший приоритет.
+Параметры, заданные в Chameleon Plugin, будут переданы как system properties и иметь наивысший приоритет.
 
 ## Вспомогательные методы
 
@@ -103,8 +103,8 @@ testit.configFile=config/dev_config.json
 Для использования методов addLinks() и addMessage() необходимо импортировать класс TestITSteps и также объявить его переменную через аннотацию @Autowired.
 
 ```java
-import ru.ibsqa.qualit.steps.AttachmentSteps;
-import ru.ibsqa.qualit.testit.steps.TestITSteps;
+import ru.ibsqa.chameleon.steps.AttachmentSteps;
+import ru.ibsqa.chameleon.testit.steps.TestITSteps;
 
 @Component
 public class TestSteps {
